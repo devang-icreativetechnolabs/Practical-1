@@ -1,0 +1,12 @@
+controllers:
+    resource:
+        path: ../../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+kernel:
+    resource: App\Kernel
+    type: attribute
+imported_routes:
+  resource: ../routes.xml
+  type: xml
