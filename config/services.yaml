@@ -19,6 +19,10 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
+    # explicitly configure the service
+    App\Controller\BrandNewController    :
+        arguments:
+            $adminEmail: 'manager@example.com'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
